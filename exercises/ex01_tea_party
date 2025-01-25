@@ -1,0 +1,11 @@
+"""Program to help plan a cozy tea party i terms of supplies!"""
+
+
+_author_: str = "730547147"
+
+
+
+def tea_bags(people: int) -> int:
+    """This is to help determine how many tea bags per person."""
+    return 2 * people
+    
