@@ -1,8 +1,16 @@
-"""Program to help plan a cozy tea party i terms of supplies!"""
+"""Program to help plan a cozy tea party in terms of supplies!"""
 
 
 _author_: str = "730547147"
 
+
+def main_planner(guests: int) -> None
+    """entrypoint of tea party planning functions."""
+    print ("A Cozy Tea Party for 2 People!")
+    print ("Tea " + "Bags" + ": " + str(tea_bags(guests=people)))
+    print ("Treats" + ": " + str(treats(guests=people)))
+    print ("Cost" + ": " + str(cost(tea_count=tea_bags, treat_count=treats)))
+    return None
 
 
 def tea_bags(people: int) -> int:
@@ -11,3 +19,12 @@ def tea_bags(people: int) -> int:
 
 
 
+def treats(people: int) -> int:
+    """Function that determines that for how many drinks a person consumes, how many treats they will want."""
+    return int(tea_bags(people=people) * 1.5)
+
+
+
+def cost(tea_count: int, treat_count: int) -> float:
+    """Function used to determine the cost of the tea and the treats for the party depending on the number of people."""
+    return (0.50 * tea_count) + (0.75 * treat_count)
