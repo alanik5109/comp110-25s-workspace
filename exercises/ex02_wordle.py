@@ -2,6 +2,11 @@
 __author__: str = "730547147"
 
 
+def main(secret: str) -> None:
+    """The entrypoint of the program and main game loop."""
+
+
+
 def contains_char(search_string: str, single_char: str) -> bool:
     """This function is to return true or false depending on an inputted string and character."""
     assert len(single_char) == 1, f"len('{single_char}') is not 1"
@@ -22,15 +27,15 @@ YELLOW_BOX: str = "\U0001F7E8"
 def emojified(guess: str, secret: str) -> str: 
   """Emojifying the results of the above function in a Wordle-type fashion"""
   assert len(guess) == len(secret), "Guess must be same length as secret"  
-  idx2: int = 0
+  idx_two: int = 0
   output: str = ""
   if contains_char == False:
       return print(f"{WHITE_BOX} * len(guess)")
   else:
-    while idx2 < len(guess):
-       if guess[idx2] == secret[idx2]:
+    while idx_two < len(guess):
+       if guess[idx_two] == secret[idx_two]:
           output += GREEN_BOX
-        elif contains_char(secret, guess[idx2]) == True:
+        elif contains_char(secret, guess[idx_two]) == True:
             output += YELLOW_BOX
         else:
             output = WHITE_BOX
