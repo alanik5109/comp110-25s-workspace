@@ -40,7 +40,15 @@ def emojified(guess: str, secret: str) -> str:
 
 def input_guess(N: int) -> str:
     guess = input(f"Enter a {N} character word:")
-    if 
+    if len(guess) == N:
+        return guess
+    else:
+        while len(guess) != N:
+            print(f"That wasn't {N} chars! Try again:")
+            guess = input(f"Enter a {N} character word:")
+        return guess        
+
+
 
 
 
