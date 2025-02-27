@@ -10,7 +10,7 @@ def main(secret: str) -> None:
         print(f"=== Turn {player_turns}/6 ===")
         print(emojified(player_guess, secret))
         if player_guess == secret and player_turns <= 6:
-            print(f"You won in {player_turns}/6!")
+            print(f"You won in {player_turns}/6 turns!")
             return None
         else:
             player_turns = player_turns + 1
@@ -61,9 +61,6 @@ def input_guess(N: int) -> str:
             print(f"That wasn't {N} chars! Try again:")
             guess = input(f"Enter a {N} character word:")
         return guess        
-
-
-
 
 
 if __name__ == "__main__":
