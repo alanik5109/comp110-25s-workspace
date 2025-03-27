@@ -64,7 +64,7 @@ def input_guess(N: int) -> str:
 
 
 if __name__ == "__main__":
-    main(secret="codes")
+    main(secret="mayflower")
 
 
 
