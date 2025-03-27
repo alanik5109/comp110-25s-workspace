@@ -73,3 +73,9 @@ def test_bin2() -> None:
     bin2_test = ["rat","bat","ant","bee","fox"]
     expected_diction2 = {3:{"rat","bat","ant","bee","fox"}}
     assert bin_len(bin2_test) == expected_diction2
+
+def test_bin_edge() -> None:
+    """testing edge case in which no values are inputted"""
+    bin_edge = []
+    expected_diction3 = {}
+    assert bin_len(bin_edge) == expected_diction3
