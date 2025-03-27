@@ -5,11 +5,11 @@ ___author___ = "730547147"
 def invert(dictionary: dict[str, str]) -> dict[str, str]:
     """Inverting the keys and values of dictionary"""
     flip_diction = dict()
-    key_list = list()
     for keys in dictionary:
-         if keys in flip_diction:
+        value = dictionary[keys]
+        if value in flip_diction:
                 raise KeyError("Duplicate key!")  
-         flip_diction[dictionary[keys]] = keys
+        flip_diction[value] = keys
     return flip_diction
         
 
