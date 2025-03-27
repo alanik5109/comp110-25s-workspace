@@ -7,18 +7,17 @@ def invert(dictionary: dict[str, str]) -> dict[str, str]:
     flip_diction = dict()
     key_list = list()
     for keys in dictionary:
-        for items in key_list:
-            if items == keys:
+         if keys in flip_diction:
                 raise KeyError("Duplicate key!")  
-        flip_diction[dictionary[keys]] = keys
+         flip_diction[dictionary[keys]] = keys
     return flip_diction
         
 
 def count(string_list: list[str]) -> dict[str, int]:
     """Counting the amount of times an item shows up in a list."""
-    count_dict = dict()
+    count_dict: dict[str, int] = {}
     for items in string_list:
-        if items in count_dict == True:
+        if items in count_dict:
             count_dict[items] += 1 
         else:
             count_dict[items] = 1
