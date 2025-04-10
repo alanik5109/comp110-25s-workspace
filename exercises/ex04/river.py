@@ -1,7 +1,9 @@
 """File to define River class."""
 
-#from exercises.EX04.fish import Fish
-#from exercises.EX04.bear import Bear
+
+
+from exercises.ex04.fish import Fish
+from exercises.ex04.bear import Bear
 from fish import Fish
 from bear import Bear
 
@@ -52,7 +54,7 @@ class River:
         for bear in self.bears:
             if len(self.fish) >= 5:
                 self.remove_fish(3)
-                Bear.eat
+                bear.eat
         return None
     
     def check_hunger(self) -> None:

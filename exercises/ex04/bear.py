@@ -11,7 +11,7 @@ class Bear:
     
     def one_day(self) -> None:
         self.age += 1
-        self.hunger -= 1
+        self.hunger_score -= 1
         return None
     
     def eat(self, num_fish: int) -> None:
